@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generador de mapas - Crear Usuario</title>
+  <link rel="stylesheet" href="./styles/user.css">
+</head>
+
+<body class="createUserBody">
+  <main class="container">
+    <h1>Crear Usuario</h1>
+    <form id="createUserForm" class="form">
+      <input type="text" id="user" placeholder="Nombre" required>
+      <span id="nameError" class="error"></span>
+      <input type="email" id="email" placeholder="Correo Electrónico" required>
+      <span id="emailError" class="error"></span>
+      <input type="tel" id="phone" placeholder="Teléfono" required>
+      <span id="phoneError" class="error"></span>
+      <input type="password" id="password" placeholder="Contraseña" required>
+      <span id="passwordError" class="error"></span>
+      <input type="password" id="confirmPassword" placeholder="Repetir Contraseña" required>
+      <span id="confirmPasswordError" class="error"></span>
+      <p>¿Ya tienes usuario? <a href="index.html">Inicia sesión</a></p>
+      <button type="submit">Crear Usuario</button>
+    </form>
+  </main>
+
+  <script src="./src/user.js"></script>
+</body>
+
+</html>

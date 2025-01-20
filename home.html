@@ -11,11 +11,17 @@
 <body>
   <header>
     <h1>Matriz de Eisenhower</h1>
-    <p>Login: <span id="usernameDisplay"></span></p>
+    <p>
+      Login: <span id="usernameDisplay"></span>
+      <button id="logoutButton">Cerrar sesión</button>
+    </p>
+    
     <p>Fecha actual: <span id="currentDate"></span></p>
   </header>
 
   <main>
+
+    <img src="./img/cat.jpg">
 
     <h2>Mis datos</h2>
     <section>
@@ -24,7 +30,7 @@
     </section>
 
     <h2>Mi matriz</h2>
-    <section>
+    <section class="mat">
       <div>
         <h3>Urgente e importante</h3>
         <ul></ul>
@@ -46,8 +52,7 @@
 
     <h2>Mi listado de tareas</h2>
     <section>
-      <button>Añadir tarea</button>
-      <ul></ul>
+      <button id="addTaskButton">Añadir tarea</button>
     </section>
 
     <div></div>
@@ -58,24 +63,24 @@
         priorizar tus tareas diarias de manera más eficaz. Divide tus tareas en cuatro cuadrantes según su urgencia e
         importancia:</p>
       <ul>
-        <li>
+        <li class="info">
           <strong>Urgente e importante: </strong>
           Aquí se encuentran las tareas que deben completarse inmediatamente, ya que son cruciales para tus objetivos
           principales. Por ejemplo, resolver una crisis en redes sociales o cumplir con una fecha límite de un proyecto
           importante.
         </li>
-        <li>
+        <li class="info">
           <strong>No urgente pero importante: </strong>
           Este cuadrante incluye tareas que no tienen una fecha límite inmediata pero son esenciales para tus objetivos
           a largo plazo. Por ejemplo, la preparación de una estrategia de marketing para el último trimestre del año.
         </li>
-        <li>
+        <li class="info">
           <strong>Urgente pero no Importante: </strong>
           Aquí se sitúan las tareas que requieren atención inmediata pero no son cruciales para tus objetivos
           principales. Por ejemplo, responder a correos electrónicos no urgentes o investigaciones que no afectan
           directamente a tus tareas principales.
         </li>
-        <li>
+        <li class="info">
           <strong>No urgente y no importante: </strong>
           Este cuadrante incluye tareas que no aportan valor significativo a tus objetivos y pueden eliminarse o
           delegarse. Por ejemplo, tareas que no contribuyen a tus metas a largo plazo.

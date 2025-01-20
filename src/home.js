@@ -31,8 +31,15 @@ toggleSectionVisibility("h2:nth-of-type(2)", "section:nth-of-type(2)");
 toggleSectionVisibility("h2:nth-of-type(3)", "section:nth-of-type(3)");
 toggleSectionVisibility("h2:nth-of-type(4)", "section:nth-of-type(4)");
 
-// Función para manejar el botón de añadir tarea
-document.querySelector("button").addEventListener("click", function () {
+document.getElementById("logoutButton").addEventListener("click", function () {
+  // Eliminar el usuario conectado del localStorage
+  localStorage.removeItem("loggedInUser");
+
+  // Redirigir a la página de inicio de sesión
+  window.location.href = "../index.html"; // Cambia a la ruta de tu página de inicio de sesión
+});
+
+document.getElementById("addTaskButton").addEventListener("click", function () {
   // Crear el popup
   const popup = document.createElement("div");
   popup.style.position = "fixed";
